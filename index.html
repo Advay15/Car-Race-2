@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+	background-image: url("GIF.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4,h5,h6
+{
+	color: white !important;
+    font-size: 25;
+}
+
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Advay</title>
+</head>
+<body onload="add()">
+
+<center>
+
+<h1>Car Race</h1>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+
+<h4>
+	<b class="text-danger">NOTE : </b> To move Lykan Hypersports use arrow keys and to move Bugatti use first four alphabet keys(Q, W, A, S).
+</h4>
+
+<br>
+
+<h5>
+	<b class="text-danger">NOTE : </b> Press any arrow key or W, A, S, D if cars are not visible.
+</h5>
+
+<br>
+
+<h6>
+	<b class="text-danger">NOTE : </b> Reload the page to change the race track.
+</h6>
+
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
