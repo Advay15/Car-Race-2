@@ -114,7 +114,7 @@ function right(){
 function up(){
     if(car_y>0){
         car2_y=car2_y-10;
-        console.log("when q is pressed x axis=" + car2_x + ",y axis=" + car2_y );
+        console.log("when w is pressed x axis=" + car2_x + ",y axis=" + car2_y );
         uploadBackground();
         uploadCar();
     }
@@ -122,7 +122,7 @@ function up(){
     function down(){
         if(car2_y<500){
             car2_y=car2_y+10;
-            console.log("when w is pressed x axis=" + car2_x + ",y axis=" + car2_y );
+            console.log("when s is pressed x axis=" + car2_x + ",y axis=" + car2_y );
             uploadBackground();
             uploadCar2();
         }
@@ -130,7 +130,7 @@ function up(){
     function left(){
         if(car2_x>0){
         car2_x=car2_x-10;
-        console.log("when a is pressed x axis=" + car2_x + ",y axis=" + car2_y );
+        console.log("when q is pressed x axis=" + car2_x + ",y axis=" + car2_y );
             uploadBackground();
             uploadCar2();
         }
@@ -138,9 +138,17 @@ function up(){
     function right(){
     if(car2_x<700){
         car2_x=car2_x+10;
-        console.log("when s is pressed x axis=" + car2_x + ",y axis=" + car2_y );
+        console.log("when a is pressed x axis=" + car2_x + ",y axis=" + car2_y );
         uploadBackground();
         uploadCar2();
         
+    }
+    if(car_x>700){
+        console.log("car_won");
+        document.getElementById("").innerHTML ="car_won"
+    }
+    if(car2_x>700){
+        console.log("car2_won");
+        document.getElementById("").innerHTML ="car2_won"
     }
 }
